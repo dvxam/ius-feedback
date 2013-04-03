@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @feedback.description %>
+</p>
+<p>
+	<b>Pic</b>
+	<%= image_tag(@feedback.pic) %>
+</p>
+<p>
+  <b>Name:</b>
+  <%= @feedback.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_feedback_path(@feedback) %> |
+<%= link_to 'Back', feedbacks_path %>
